@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="flex-container">
+        <h1 class="nav-title">Dojo Weather</h1>
+        <ul class="nav-links">
+          <li><a href="#" onclick="alertMsg()">Burbank</a></li>
+          <li><a href="#" onclick="alertMsg()">Chicago</a></li>
+          <li><a href="#" onclick="alertMsg()">Dallas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-container main">
+      <div class="flex-container main-title">
+        <h1>San Jose</h1>
+        <label for="select_temp"
+          >Show temperature in :
+          <select onchange="convert(this)" name="selectTemp" id="select_temp">
+            <option value="celsius">ºC</option>
+            <option value="fahrenheit">ºF</option>
+          </select></label
+        >
+      </div>
+      <div class="flex-container main-content">
+        <div class="sub-content">
+          <div class="card">
+            <h2>Today</h2>
+            <img class="icon-weather" src="img/assets/some_rain.png" alt="" />
+            <h3>some rain</h3>
+            <div class="card-weather">
+              <span class="red_text">24º</span>
+              <span class="blue_text">18º</span>
+            </div>
+          </div>
+        </div>
+        <div class="sub-content">
+          <div class="card">
+            <h2>Tomorrow</h2>
+            <img class="icon-weather" src="img/assets/some_sun.png" alt="" />
+            <h3>some sun</h3>
+            <div class="card-weather">
+              <span class="red_text">27º</span>
+              <span class="blue_text">19º</span>
+            </div>
+          </div>
+        </div>
+        <div class="sub-content">
+          <div class="card">
+            <h2>Friday</h2>
+            <img class="icon-weather" src="img/assets/some_clouds.png" alt="" />
+            <h3>some clouds</h3>
+            <div class="card-weather">
+              <span class="red_text">21º</span>
+              <span class="blue_text">16º</span>
+            </div>
+          </div>
+        </div>
+        <div class="sub-content">
+          <div class="card">
+            <h2>Saturday</h2>
+            <img class="icon-weather" src="img/assets/some_sun.png" alt="" />
+            <h3>some sun</h3>
+            <div class="card-weather">
+              <span class="red_text">26º</span>
+              <span class="blue_text">21º</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cookies-footer" class="cookies">
+      <div class="cook-card">
+        <div class="cook-img">
+          <img src="./img/assets/cookie.png" alt="" />
+        </div>
+        <div class="cook-text">
+          <h4>Stop! Cookie time</h4>
+          We use cookies (sadly not the edible ones) to personalize content and
+          ads, to provide social media features and to andlyse our traffic.
+          <a href="#">Read more..</a>
+        </div>
+        <div class="cook-btn">
+          <button type="button" onclick="funcBtn()">I Accept</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
